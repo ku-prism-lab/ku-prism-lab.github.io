@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PRISM Lab at Korea University studies how intelligent systems perceive, reason about, and generate the world through synthesis and modeling.">
+    <meta name="theme-color" content="#0d1016">
+    <meta property="og:title" content="PRISM Lab · Korea University">
+    <meta property="og:description" content="Perception and Reasoning through Intelligent Synthesis and Modeling.">
+    <meta property="og:type" content="website">
+    <title>PRISM Lab · Korea University</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20260831-prism-8">
+    <script src="script.js?v=20260831-prism-5" defer></script>
+  </head>
+  <body class="home-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav-container" aria-label="Primary navigation">
+        <a class="brand brand-placeholder" href="index.html" aria-label="PRISM Lab home">
+          <span class="brand-wordmark"><b>PRISM</b><span>Lab</span></span>
+          <small>Korea University</small>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+          <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+          <a class="nav-link" href="people.html">People</a>
+          <a class="nav-link" href="research.html">Research</a>
+          <a class="nav-link" href="publications.html">Publications</a>
+          <a class="nav-link" href="news.html">News</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="prism-hero" aria-labelledby="hero-title">
+        <div class="hero-aurora" aria-hidden="true"></div>
+        <div class="container prism-hero-layout">
+          <div class="prism-hero-copy" data-reveal>
+            <h1 class="hero-expansion" id="hero-title">
+              <span class="expansion-line"><span class="prism-initial initial-p">P</span>erception and <span class="prism-initial initial-r">R</span>easoning</span>
+              <span class="expansion-line">through <span class="prism-initial initial-i">I</span>ntelligent</span>
+              <span class="expansion-line"><span class="prism-initial initial-s">S</span>ynthesis and <span class="prism-initial initial-m">M</span>odeling</span>
+            </h1>
+          </div>
+
+          <figure class="prism-stage" data-prism-stage aria-label="One signal passes through a prism and becomes four rays representing perception, reasoning, learning, and acting.">
+            <div class="prism-stage-inner">
+              <svg class="prism-visual" viewBox="0 0 740 650" role="img" aria-hidden="true">
+                <defs>
+                  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#ffffff" stop-opacity=".12"/>
+                    <stop offset=".5" stop-color="#9aa0aa" stop-opacity=".025"/>
+                    <stop offset="1" stop-color="#ffffff" stop-opacity=".09"/>
+                  </linearGradient>
+                  <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+                    <stop offset=".55" stop-color="#ffffff" stop-opacity=".45"/>
+                    <stop offset="1" stop-color="#ffffff" stop-opacity=".9"/>
+                  </linearGradient>
+                  <radialGradient id="core" cx="50%" cy="50%" r="50%">
+                    <stop offset="0" stop-color="#ffffff" stop-opacity=".9"/>
+                    <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+                  </radialGradient>
+                  <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur stdDeviation="9"/>
+                  </filter>
+                  <filter id="ray-glow" x="-30%" y="-30%" width="160%" height="160%">
+                    <feGaussianBlur stdDeviation="4" result="blur"/>
+                    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                  </filter>
+                </defs>
+
+                <g class="stage-grid" opacity=".26">
+                  <path d="M32 84H708M32 164H708M32 244H708M32 324H708M32 404H708M32 484H708M32 564H708"/>
+                  <path d="M68 48V602M148 48V602M228 48V602M308 48V602M388 48V602M468 48V602M548 48V602M628 48V602"/>
+                </g>
+                <ellipse class="prism-orbit" cx="293" cy="329" rx="248" ry="273"/>
+                <circle class="prism-core-glow" cx="385" cy="318" r="82" fill="url(#core)" filter="url(#soft-glow)"/>
+
+                <g class="incoming-signal">
+                  <path class="signal-glow" d="M4 380L168 348L385 318"/>
+                  <path class="signal-core" d="M4 380L168 348L385 318" stroke="url(#signal)"/>
+                  <text x="34" y="352">OBSERVATION</text>
+                </g>
+
+                <g class="prism-body">
+                  <path class="prism-glass" d="M270 92L93 535H496Z" fill="url(#glass)"/>
+                  <path class="prism-outline" d="M270 92L93 535H496Z"/>
+                  <path class="prism-facet" d="M168 348L385 318"/>
+                </g>
+
+                <g class="ray-group ray-perception" style="--ray: #ff5d73">
+                  <path class="ray-halo" d="M385 318L697 126"/>
+                  <path class="ray-line" d="M385 318L697 126"/>
+                  <circle cx="697" cy="126" r="4"/>
+                  <text x="524" y="105">01 · PERCEPTION</text>
+                </g>
+                <g class="ray-group ray-reasoning" style="--ray: #ffc457">
+                  <path class="ray-halo" d="M385 318L716 267"/>
+                  <path class="ray-line" d="M385 318L716 267"/>
+                  <circle cx="716" cy="267" r="4"/>
+                  <text x="548" y="247">02 · REASONING</text>
+                </g>
+                <g class="ray-group ray-learning" style="--ray: #25c8b7">
+                  <path class="ray-halo" d="M385 318L716 417"/>
+                  <path class="ray-line" d="M385 318L716 417"/>
+                  <circle cx="716" cy="417" r="4"/>
+                  <text x="558" y="448">03 · LEARNING</text>
+                </g>
+                <g class="ray-group ray-acting" style="--ray: #7c68ff">
+                  <path class="ray-halo" d="M385 318L684 558"/>
+                  <path class="ray-line" d="M385 318L684 558"/>
+                  <circle cx="684" cy="558" r="4"/>
+                  <text x="523" y="590">04 · ACTING</text>
+                </g>
+              </svg>
+            </div>
+          </figure>
+        </div>
+
+      </section>
+
+      <section class="pillar-ribbon" aria-label="Four pillars of intelligence">
+        <div class="container pillar-ribbon-grid">
+          <p class="ribbon-label">Four pillars<br>of intelligence</p>
+          <article style="--pillar: #ff5d73"><span>01</span><h2>Perception</h2><ul><li>Video understanding</li><li>Computational imaging</li></ul></article>
+          <article style="--pillar: #ffc457"><span>02</span><h2>Reasoning</h2><ul><li>Multimodal intelligence</li><li>Agents &amp; alignment</li></ul></article>
+          <article style="--pillar: #25c8b7"><span>03</span><h2>Learning</h2><ul><li>Generative modeling</li><li>World models</li></ul></article>
+          <article style="--pillar: #7c68ff"><span>04</span><h2>Acting</h2><ul><li>Controllable generation</li><li>Real-world agents</li></ul></article>
+        </div>
+      </section>
+
+      <section class="lab-introduction">
+        <div class="container introduction-copy" data-reveal>
+          <p>
+            Welcome to the <strong>PRISM Lab</strong> at <strong>Korea University</strong>, led by <strong><a href="https://hyungjin-chung.github.io/" target="_blank" rel="noreferrer">Hyungjin Chung</a></strong>. We develop generative models and agents—and better ways to guide and align them—so that intelligent systems can reason, create, and act in complex real-world settings.
+          </p>
+          <p>
+            We believe that better models create better intelligence, while better guidance and alignment turn that intelligence into breakthroughs. Our work connects foundational research with computational imaging, medical AI, AI4Science, physical AI, and industrial applications.
+          </p>
+          <h2>Our core research areas include:</h2>
+          <ul>
+            <li>Generative AI and agents</li>
+            <li>Video generation and world models</li>
+            <li>Video understanding</li>
+            <li>Inverse problems and computational imaging</li>
+            <li>Medical AI and AI4Science</li>
+          </ul>
+          <p class="introduction-research-link"><a href="research.html">Explore our research directions →</a></p>
+          <p class="introduction-recruiting-note">
+            We are looking for motivated students and postdoctoral researchers to join the lab. Please see the <a href="contact.html">contact page</a> for details.
+          </p>
+        </div>
+      </section>
+
+      <section class="home-news prism-news">
+        <div class="container">
+          <div class="plain-section-heading"><h2>News</h2><a href="news.html">View all <span aria-hidden="true">↗</span></a></div>
+          <div class="news-list compact">
+            <article class="news-row" data-reveal>
+              <time datetime="2026-06">2026.06</time>
+              <p class="news-summary"><strong>Two papers</strong>, <em>InverseCrafter</em> and <em>ReDesign</em>, are accepted to <strong class="news-venue-name">ECCV 2026</strong>.</p>
+              <span class="news-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="news-row" data-reveal>
+              <time datetime="2026-05">2026.05</time>
+              <p class="news-summary"><strong>One paper</strong>, <em>Contrastive CFG</em>, is accepted to <strong class="news-venue-name">ICML 2026</strong>.</p>
+              <span class="news-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="news-row" data-reveal>
+              <time datetime="2026-04">2026.04</time>
+              <p class="news-summary"><strong>Two papers</strong>, <em>ReDirector</em> and <em>Video Parallel Scaling</em>, are accepted to <strong class="news-venue-name">CVPR 2026</strong>.</p>
+              <span class="news-arrow" aria-hidden="true">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer prism-footer">
+      <div class="container footer-content">
+        <div class="footer-brand"><p class="footer-wordmark"><b>PRISM</b> Lab</p><p>Perception and Reasoning through<br>Intelligent Synthesis and Modeling</p></div>
+        <div class="footer-address"><p>Department of Computer Science and Engineering<br>Room 303, Woojung Hall of Informatics<br>Korea University · 02-3290-3203</p></div>
+        <div class="footer-meta">
+          <a class="ku-signature" href="https://www.korea.ac.kr/en/" target="_blank" rel="noreferrer" aria-label="Visit the Korea University website">
+            <img src="assets/brand/korea-university-signature.svg" alt="Korea University" width="327" height="108">
+          </a>
+          <p class="copyright">© <span data-year>2026</span> PRISM Lab</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

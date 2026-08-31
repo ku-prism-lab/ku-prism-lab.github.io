@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Publications from the PRISM Lab, Korea University.">
+    <title>Publications · PRISM Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20260831-prism-8">
+    <script src="script.js?v=20260831-prism-5" defer></script>
+    <script src="publications-data.js" defer></script>
+    <script src="publications.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav-container" aria-label="Primary navigation">
+        <a class="brand brand-placeholder" href="index.html" aria-label="PRISM Lab home">
+          <span class="brand-wordmark"><b>PRISM</b><span>Lab</span></span>
+          <small>Korea University</small>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation"><span></span><span></span><span></span></button>
+        <div class="nav-menu" id="nav-menu">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="people.html">People</a>
+          <a class="nav-link" href="research.html">Research</a>
+          <a class="nav-link active" href="publications.html">Publications</a>
+          <a class="nav-link" href="news.html">News</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main-content">
+      <header class="page-header">
+        <div class="container"><h1>Publications</h1><p>Selected recent work</p></div>
+      </header>
+      <section class="page-content container publication-list-page">
+        <div class="publication-controls">
+          <label class="publication-search">
+            <span class="search-icon" aria-hidden="true"></span>
+            <input id="publication-search" type="search" placeholder="Search publications..." autocomplete="off">
+          </label>
+          <div class="publication-filters" id="publication-filters" role="group" aria-label="Filter publications by year">
+            <button class="filter-btn active" type="button" data-filter-year="all">All years</button>
+          </div>
+          <p class="publication-count" id="publication-count" aria-live="polite">Loading publications…</p>
+        </div>
+        <div class="publications-content" id="publication-results">
+          <p class="publication-loading">Loading publications…</p>
+        </div>
+        <noscript><p class="publication-empty">JavaScript is required to search the publication archive.</p></noscript>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div><h2>PRISM Lab</h2><p>Department of Computer Science and Engineering<br>Korea University</p></div>
+        <a class="ku-signature" href="https://www.korea.ac.kr/en/" target="_blank" rel="noreferrer" aria-label="Visit the Korea University website"><img src="assets/brand/korea-university-signature.svg" alt="Korea University" width="327" height="108"></a>
+        <p class="copyright">© <span data-year>2026</span> PRISM Lab. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
