@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!publicationsContainer || !filterContainer || !searchInput || !window.publicationsData) return;
 
   const allPublications = window.publicationsData;
+  const collaborators = window.collaborators || {};
   let currentYear = "all";
   let currentSearch = "";
 
@@ -22,6 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function emphasizePI(authors) {
     return escapeHTML(authors).replaceAll("Hyungjin Chung", "<strong>Hyungjin Chung</strong>");
+  }
+
+  function collaboratorNames(publication) {
+    return (publication.collab || []).map((key) => collaborators[key]?.name || key);
+  }
+
+  function createCollaboratorHTML(key) {
+    const org = collaborators[key];
+    if (!org) return escapeHTML(key);
+    if (org.letters) {
+      const letters = [...org.name]
+        .map((letter, index) => `<span style="color: ${org.letters[index]}">${escapeHTML(letter)}</span>`)
+        .join("");
+      return `<span class="collab-org">${letters}</span>`;
+    }
+    return `<span class="collab-org" style="color: ${org.color}">${escapeHTML(org.name)}</span>`;
   }
 
   function createFilterButtons() {
@@ -52,6 +69,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const note = publication.note
       ? `<p class="publication-note">${escapeHTML(publication.note)}</p>`
       : "";
+    const collab = publication.collab?.length
+      ? `<p class="publication-collab">Collaboration with ${publication.collab.map(createCollaboratorHTML).join(", ")}</p>`
+      : "";
 
     return `
       <article class="publication-row">
@@ -61,6 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <h3>${escapeHTML(publication.title)}</h3>
           <p class="publication-authors">${emphasizePI(publication.authors)}</p>
           <p class="publication-venue">${escapeHTML(publication.venue)}</p>
+          ${collab}
           ${note}
           <p class="publication-links">${links}</p>
         </div>
@@ -120,6 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
         publication.short,
         publication.year,
         publication.note || "",
+        ...collaboratorNames(publication),
       ]
         .join(" ")
         .toLowerCase();

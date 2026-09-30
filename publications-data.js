@@ -1,3 +1,23 @@
+// Collaborating organizations shown as "Collaboration with ..." under each paper, in brand colors.
+// Publications reference these by key via `collab: ["key", ...]`.
+window.collaborators = {
+  google: { name: "Google", letters: ["#4285f4", "#ea4335", "#fbbc05", "#4285f4", "#34a853", "#ea4335"] },
+  samsung: { name: "Samsung", color: "#1428a0" },
+  lanl: { name: "Los Alamos National Laboratory", color: "#003c71" },
+  kaist: { name: "KAIST", color: "#004191" },
+  snu: { name: "Seoul National Univ.", color: "#0f0f70" },
+  eth: { name: "ETH Zürich", color: "#215caf" },
+  oxford: { name: "Univ. of Oxford", color: "#002147" },
+  copenhagen: { name: "Univ. of Copenhagen", color: "#901a1e" },
+  ucl: { name: "UCL", color: "#500778" },
+  technion: { name: "Technion", color: "#005eb8" },
+  cuhk: { name: "CUHK", color: "#6d2077" },
+  uiuc: { name: "UIUC", color: "#e84a27" },
+  michigan: { name: "Univ. of Michigan", color: "#00274c" },
+  unc: { name: "UNC Chapel Hill", color: "#4b9cd3" },
+  minnesota: { name: "Univ. of Minnesota", color: "#7a0019" },
+};
+
 window.publicationsData = [
   {
     year: 2026,
@@ -5,6 +25,7 @@ window.publicationsData = [
     title: "Accelerating Video Inverse Problem Solvers with Autoregressive Diffusion Models",
     authors: "Taesung Kwon*, Jonghyun Park*, Hyungjin Chung+, Jong Chul Ye+",
     venue: "Advances in Neural Information Processing Systems, 2026.",
+    collab: ["kaist"],
     image: "assets/images/publications/avis.webp",
     links: [
       ["Paper", "https://arxiv.org/abs/2605.20624"],
@@ -17,6 +38,7 @@ window.publicationsData = [
     title: "Stitched Value Model for Diffusion Alignment",
     authors: "Hyojun Go, Hyungjin Chung+, Prune Truong, Goutam Bhat, Li Mi, Zhaochong An, Zixiang Zhao+, Dominik Narnhofer, Serge Belongie, Federico Tombari, Konrad Schindler",
     venue: "Advances in Neural Information Processing Systems, 2026.",
+    collab: ["eth", "google", "copenhagen"],
     image: "assets/images/publications/stitchvm.webp",
     links: [
       ["Paper", "https://arxiv.org/abs/2605.19804"],
@@ -30,6 +52,7 @@ window.publicationsData = [
     title: "Exact Posterior Score Estimation for Solving Linear Inverse Problems",
     authors: "Abbas Mammadov, Ozgur Kara, Kaan Oktay, Iskander Azangulov, Adil Kaan Akan, Hyungjin Chung, James Matthew Rehg, Yee Whye Teh",
     venue: "Advances in Neural Information Processing Systems, 2026.",
+    collab: ["oxford", "uiuc"],
     image: "assets/images/publications/eps.webp",
     links: [["Paper", "https://arxiv.org/abs/2606.17048"]],
   },
@@ -48,6 +71,7 @@ window.publicationsData = [
     title: "InverseCrafter: Efficient Video ReCapture as a Latent Domain Inverse Problem",
     authors: "Yeobin Hong*, Suhyeon Lee*, Hyungjin Chung+, Jong Chul Ye+",
     venue: "European Conference on Computer Vision, 2026.",
+    collab: ["kaist"],
     image: "assets/images/inversecrafter.jpg",
     links: [
       ["Paper", "https://arxiv.org/abs/2512.05672"],
@@ -60,6 +84,7 @@ window.publicationsData = [
     title: "ReDesign: Recovering Editable Design Structures from Raster Images via Agentic Decomposition",
     authors: "Jooyeol Yun, Jintae Park, Hyesu Lim, Junha Hyung, Hyungjin Chung, Jaegul Choo",
     venue: "European Conference on Computer Vision, 2026.",
+    collab: ["kaist"],
     image: "assets/images/redesign.jpg",
     links: [
       ["Paper", "https://openreview.net/forum?id=JiEr8B3WBr"],
@@ -73,6 +98,7 @@ window.publicationsData = [
     title: "ContrastiveCFG: Guiding Diffusion Sampling by Contrasting Positive and Negative Concepts",
     authors: "Jinho Chang, Changsun Lee, Hyungjin Chung, Jong Chul Ye",
     venue: "International Conference on Machine Learning, 2026.",
+    collab: ["kaist"],
     image: "assets/images/contrastive-cfg.png",
     links: [["Paper", "https://arxiv.org/abs/2411.17077"]],
   },
@@ -82,6 +108,7 @@ window.publicationsData = [
     title: "ReDirector: Robust Video Diffusion with Reversible Frame Reordering",
     authors: "Byeongjun Park, Byung-Hoon Kim, Hyungjin Chung+, Jong Chul Ye+",
     venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2026.",
+    collab: ["kaist"],
     image: "assets/images/redirector.jpg",
     links: [
       ["Paper", "https://arxiv.org/abs/2511.19827"],
@@ -95,6 +122,7 @@ window.publicationsData = [
     title: "Video Parallel Scaling: Aggregating Diverse Frame Subsets for VideoLLMs",
     authors: "Hyungjin Chung, Hyelin Nam, Jiyeon Kim, Hyojun Go, Byeongjun Park, Junho Kim, Joonseok Lee, Seongsu Ha, Byung-Hoon Kim",
     venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2026.",
+    collab: ["michigan", "kaist", "eth", "unc"],
     image: "assets/images/publications/vps.webp",
     links: [
       ["Paper", "https://arxiv.org/abs/2509.08016"],
@@ -116,6 +144,7 @@ window.publicationsData = [
     title: "InvFusion: Bridging Supervised and Zero-shot Diffusion for Inverse Problems",
     authors: "Noam Elata*, Hyungjin Chung*, Jong Chul Ye, Tomer Michaeli, Michael Elad",
     venue: "Advances in Neural Information Processing Systems, 2025.",
+    collab: ["technion", "kaist"],
     image: "assets/images/publications/invfusion.webp",
     links: [
       ["Paper", "https://arxiv.org/abs/2504.01689"],
@@ -128,6 +157,7 @@ window.publicationsData = [
     title: "SteerX: Creating Any Camera-Free 3D and 4D Scenes with Geometric Steering",
     authors: "Byeongjun Park*, Hyojun Go*, Hyelin Nam, Byung-Hoon Kim, Hyungjin Chung+, Changick Kim+",
     venue: "IEEE/CVF International Conference on Computer Vision, 2025.",
+    collab: ["kaist"],
     image: "assets/images/publications/steerx.webp",
     links: [
       ["Paper", "https://arxiv.org/abs/2503.12024"],
@@ -141,6 +171,7 @@ window.publicationsData = [
     title: "VideoRFSplat: Direct Scene-Level Text-to-3D Gaussian Splatting Generation with Flexible Pose and Multi-View Joint Modeling",
     authors: "Hyojun Go*, Byeongjun Park*, Hyelin Nam, Byung-Hoon Kim, Hyungjin Chung+, Changick Kim+",
     venue: "IEEE/CVF International Conference on Computer Vision, 2025.",
+    collab: ["kaist"],
     image: "assets/images/publications/videorfsplat.webp",
     links: [
       ["Paper", "https://arxiv.org/abs/2503.15855"],
@@ -203,6 +234,7 @@ window.publicationsData = [
     title: "Steerable Conditional Diffusion for Out-of-Distribution Adaptation in Medical Image Reconstruction",
     authors: "Riccardo Barbano*, Alexander Denker*, Hyungjin Chung*, Tae Hoon Roh, Simon Arrdige, Peter Maass, Bangti Jin, Jong Chul Ye",
     venue: "IEEE Transactions on Medical Imaging, 2025.",
+    collab: ["ucl", "cuhk"],
     image: "assets/images/publications/scd.webp",
     links: [
       ["Paper", "https://arxiv.org/abs/2308.14409"],
@@ -240,6 +272,7 @@ window.publicationsData = [
     title: "Prompt-tuning Latent Diffusion Models for Inverse Problems",
     authors: "Hyungjin Chung, Jong Chul Ye, Peyman Milanfar, Mauricio Delbracio",
     venue: "International Conference on Machine Learning, 2024.",
+    collab: ["google"],
     image: "assets/images/publications/p2l.webp",
     links: [["Paper", "https://arxiv.org/abs/2310.01110"]],
   },
@@ -287,6 +320,7 @@ window.publicationsData = [
     title: "Solving 3D Inverse Problems using Pre-trained 2D Diffusion Models",
     authors: "Hyungjin Chung*, Dohoon Ryu*, Michael T. Mccann, Marc L. Klasky, Jong Chul Ye",
     venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2023.",
+    collab: ["lanl"],
     image: "assets/images/publications/diffusionmbir.webp",
     links: [
       ["Paper", "https://arxiv.org/abs/2211.10655v1"],
@@ -300,6 +334,7 @@ window.publicationsData = [
     title: "Diffusion Posterior Sampling for General Noisy Inverse Problems",
     authors: "Hyungjin Chung*, Jeongsol Kim*, Michael T. Mccann, Marc L. Klasky, Jong Chul Ye",
     venue: "International Conference on Learning Representations, 2023.",
+    collab: ["lanl"],
     note: "Spotlight; Gold prize, 29th Samsung Humantech Paper Award",
     image: "assets/images/publications/dps.webp",
     links: [
@@ -356,6 +391,7 @@ window.publicationsData = [
     title: "Low-dose sparse-view HAADF-STEM-EDX tomography of nanocrystals using unsupervised deep learning",
     authors: "Eunju Cha*, Hyungjin Chung*, Jaeduck Jang, Junho Lee, Eunha Lee, Jong Chul Ye",
     venue: "ACS Nano, 2022.",
+    collab: ["samsung"],
     image: "assets/images/publications/acs_nano.gif",
     links: [["Paper", "https://pubs.acs.org/doi/10.1021/acsnano.2c00168"]],
   },
@@ -365,6 +401,7 @@ window.publicationsData = [
     title: "Deep Learning Model for Diagnosing Gastric Mucosal Lesions Using Endoscopic Images: Development, Validation, and Method Comparison",
     authors: "Joon Yeul Nam*, Hyungjin Chung*, Kyu Sung Choi*, Hyuk Lee*, Seung Jun Han*, Tae Jun Kim, Hosim Soh, Eun Kang, Soo-jeong Cho, Jong Chul Ye, Jong Pil Im, Sang Gyun Kim, Yoon Jun Kim, Joo Sung Kim, Jung-Hwan Yoo, Hyunsoo Chung, Jeong-Hoon Lee",
     venue: "Gastrointestinal Endoscopy, 2021.",
+    collab: ["snu"],
     image: null,
     links: [["Paper", "https://pubmed.ncbi.nlm.nih.gov/34492271/"]],
   },
@@ -374,6 +411,7 @@ window.publicationsData = [
     title: "Deep learning STEM-EDX tomography of nanocrystals",
     authors: "Yoseob Han*, Jaeduck Jang*, Eunju Cha*, Junho Lee*, Hyungjin Chung*, Myoungho Jeong, Tae-Gon Kim, Byeong Gyu Chae, Hee Goo Kim, Shinae Jun, Sungwoo Hwang, Eunha Lee, Jong Chul Ye",
     venue: "Nature Machine Intelligence, 2021.",
+    collab: ["samsung"],
     note: "2021 March Issue Cover",
     image: "assets/images/publications/NMI_stem.webp",
     links: [
@@ -399,6 +437,7 @@ window.publicationsData = [
     title: "Unsupervised Deep Learning Methods for Biological Image Reconstruction and Enhancement",
     authors: "Mehmet Akcakaya, Burhaneddin Yaman, Hyungjin Chung, Jong Chul Ye",
     venue: "IEEE Signal Processing Magazine, 2021.",
+    collab: ["minnesota"],
     image: null,
     links: [["Paper", "https://arxiv.org/abs/2105.08040"]],
   },
@@ -408,6 +447,7 @@ window.publicationsData = [
     title: "Two-Stage Deep Learning for Accelerated 3D Time-of-Flight MRA without Matched Training Data",
     authors: "Hyungjin Chung, Eunju Cha, Leonard Sunwoo, Jong Chul Ye",
     venue: "Medical Image Analysis, 2020.",
+    collab: ["snu"],
     image: "assets/images/publications/MeDIA_TOF.webp",
     links: [["Paper", "https://www.sciencedirect.com/science/article/abs/pii/S1361841521000931"]],
   },
@@ -426,6 +466,7 @@ window.publicationsData = [
     title: "Unpaired training of deep learning tMRA for flexible spatio-temporal resolution",
     authors: "Gyutaek Oh, Byeongsu Sim, Hyungjin Chung, Leonard Sunwoo, Jong Chul Ye",
     venue: "IEEE Transactions on Computational Imaging, 2020.",
+    collab: ["snu"],
     image: null,
     links: [["Paper", "https://arxiv.org/abs/2008.12967"]],
   },
