@@ -63,7 +63,10 @@ window.publicationsData = [
     authors: "Hyungjin Chung*, Byeongjun Park*, Joonseok Lee, Hojun Kim, Jaeho Choi, Byung-Hoon Kim",
     venue: "Advances in Neural Information Processing Systems (Evaluations & Datasets Track), 2026.",
     image: "assets/images/publications/mvvbench.webp",
-    links: [],
+    links: [
+      ["Paper", "https://arxiv.org/abs/2609.30952"],
+      ["Benchmark", "https://huggingface.co/datasets/everex/MVVBench"],
+    ],
   },
   {
     year: 2026,
