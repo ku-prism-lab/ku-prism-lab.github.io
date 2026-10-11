@@ -363,8 +363,8 @@ img {
 .news-venue-name {
   padding: 1px 4px;
   border-radius: 2px;
-  background: rgba(103, 91, 231, .12);
-  color: #5549cf !important;
+  background: rgba(62, 99, 221, .1);
+  color: #3a5bc7 !important;
   font-weight: 700 !important;
   white-space: nowrap;
 }
@@ -388,6 +388,16 @@ img {
   color: #3d3d3d;
   font-size: 16px;
   font-weight: 600;
+}
+
+.footer-content h2.footer-logo {
+  margin-bottom: 12px;
+}
+
+.footer-logo img {
+  display: block;
+  width: auto;
+  height: 22px;
 }
 
 .footer-content p {
@@ -732,8 +742,8 @@ img {
   margin-bottom: 3px;
   padding: 2px 6px;
   border-radius: 2px;
-  background: rgba(103, 91, 231, .12);
-  color: #5549cf;
+  background: rgba(62, 99, 221, .1);
+  color: #3a5bc7;
   font-size: 12px;
   font-weight: 700;
   line-height: 1.45;
@@ -1188,9 +1198,11 @@ img {
 }
 
 /* --------------------------------------------------------------------------
-   PRISM Lab identity — homepage v1
-   The final logo is intentionally decoupled from this system. The homepage
-   uses a text wordmark and an editorial prism visualization in the meantime.
+   PRISM Lab identity — v2 (2026-10)
+   Logo: assets/brand/prism-lab-logo(-dark).svg. The four rays follow the
+   four beams of the logo, top to bottom: blue, teal, amber, red. The ray
+   variables hold the logo's dark-background beam colours because the hero,
+   ribbon and footer they colour are dark.
    -------------------------------------------------------------------------- */
 
 :root {
@@ -1200,10 +1212,10 @@ img {
   --prism-white: #ffffff;
   --prism-copy: #515760;
   --prism-line: #d8d9dc;
-  --perception: #ff5d73;
-  --reasoning: #ffc457;
-  --learning: #25c8b7;
-  --acting: #7c68ff;
+  --perception: #6e8cf0;
+  --reasoning: #2bc3ae;
+  --learning: #f0b848;
+  --acting: #f2666a;
   --crimson: #596270;
   --container: 1240px;
 }
@@ -1220,9 +1232,7 @@ body {
 
 .home-page h1,
 .home-page h2,
-.home-page h3,
-.brand-wordmark,
-.footer-wordmark {
+.home-page h3 {
   font-family: "Space Grotesk", "Inter", sans-serif;
 }
 
@@ -1239,39 +1249,10 @@ body {
   height: 78px;
 }
 
-.brand-placeholder {
-  min-width: 142px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 1px;
-  line-height: 1;
-}
-
-.brand-wordmark {
-  display: flex;
-  align-items: baseline;
-  gap: 5px;
-  color: #ffffff;
-  font-size: 22px;
-  letter-spacing: -.045em;
-}
-
-.brand-wordmark b {
-  font-weight: 700;
-  letter-spacing: .015em;
-}
-
-.brand-wordmark span {
-  font-weight: 400;
-}
-
-.brand-placeholder small {
-  color: rgba(255, 255, 255, .48);
-  font-size: 7px;
-  font-weight: 600;
-  letter-spacing: .235em;
-  text-transform: uppercase;
+.brand-logo img {
+  display: block;
+  width: auto;
+  height: 26px;
 }
 
 .nav-link {
@@ -1325,10 +1306,10 @@ body {
   z-index: -2;
   opacity: .3;
   background:
-    radial-gradient(circle at 69% 20%, rgba(168, 111, 121, .09), transparent 17%),
-    radial-gradient(circle at 88% 38%, rgba(163, 138, 94, .07), transparent 19%),
-    radial-gradient(circle at 76% 66%, rgba(94, 137, 133, .08), transparent 20%),
-    radial-gradient(circle at 58% 79%, rgba(116, 119, 141, .1), transparent 19%);
+    radial-gradient(circle at 69% 20%, rgba(110, 140, 240, .09), transparent 17%),
+    radial-gradient(circle at 88% 38%, rgba(43, 195, 174, .07), transparent 19%),
+    radial-gradient(circle at 76% 66%, rgba(240, 184, 72, .07), transparent 20%),
+    radial-gradient(circle at 58% 79%, rgba(242, 102, 106, .08), transparent 19%);
   filter: blur(44px);
   animation: prism-aurora 16s ease-in-out infinite alternate;
 }
@@ -1377,7 +1358,7 @@ body {
 
 .prism-hero h1 span {
   display: inline-block;
-  background: linear-gradient(96deg, #ff7084 0%, #f8c75c 32%, #31cbbb 64%, #8a7aff 100%);
+  background: linear-gradient(96deg, var(--perception) 0%, var(--reasoning) 32%, var(--learning) 64%, var(--acting) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -2185,16 +2166,13 @@ body {
 }
 
 .footer-wordmark {
-  margin-bottom: 16px;
-  color: #ffffff;
-  font-size: 29px !important;
-  font-weight: 400;
-  letter-spacing: -.05em;
+  margin-bottom: 18px;
 }
 
-.footer-wordmark b {
-  font-weight: 700;
-  letter-spacing: .015em;
+.footer-wordmark img {
+  display: block;
+  width: auto;
+  height: 30px;
 }
 
 .footer-brand > p:last-child,
@@ -2530,7 +2508,8 @@ body {
 /* Homepage simplification and restored introduction */
 
 :root {
-  --intelligence: #91ce64;
+  /* four colours for five letters: P R S M take the beams, I the prism's light */
+  --intelligence: #edeef0;
 }
 
 .prism-hero h1.hero-expansion {

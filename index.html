@@ -9,10 +9,12 @@
     <meta property="og:description" content="Perception and Reasoning through Intelligent Synthesis and Modeling.">
     <meta property="og:type" content="website">
     <title>PRISM Lab · Korea University</title>
+    <link rel="icon" href="assets/brand/prism-icon.png" sizes="512x512" type="image/png">
+    <link rel="icon" href="assets/brand/prism-icon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260831-prism-8">
+    <link rel="stylesheet" href="styles.css?v=20261011-brand-v2">
     <script src="script.js?v=20260831-prism-5" defer></script>
   </head>
   <body class="home-page">
@@ -20,9 +22,8 @@
 
     <header class="site-header">
       <nav class="nav-container" aria-label="Primary navigation">
-        <a class="brand brand-placeholder" href="index.html" aria-label="PRISM Lab home">
-          <span class="brand-wordmark"><b>PRISM</b><span>Lab</span></span>
-          <small>Korea University</small>
+        <a class="brand brand-logo" href="index.html" aria-label="PRISM Lab home">
+          <img src="assets/brand/prism-lab-logo-dark.svg" alt="PRISM Lab" width="167" height="26">
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation">
           <span></span><span></span><span></span>
@@ -96,25 +97,25 @@
                   <path class="prism-facet" d="M168 348L385 318"/>
                 </g>
 
-                <g class="ray-group ray-perception" style="--ray: #ff5d73">
+                <g class="ray-group ray-perception" style="--ray: var(--perception)">
                   <path class="ray-halo" d="M385 318L697 126"/>
                   <path class="ray-line" d="M385 318L697 126"/>
                   <circle cx="697" cy="126" r="4"/>
                   <text x="524" y="105">01 · PERCEPTION</text>
                 </g>
-                <g class="ray-group ray-reasoning" style="--ray: #ffc457">
+                <g class="ray-group ray-reasoning" style="--ray: var(--reasoning)">
                   <path class="ray-halo" d="M385 318L716 267"/>
                   <path class="ray-line" d="M385 318L716 267"/>
                   <circle cx="716" cy="267" r="4"/>
                   <text x="548" y="247">02 · REASONING</text>
                 </g>
-                <g class="ray-group ray-learning" style="--ray: #25c8b7">
+                <g class="ray-group ray-learning" style="--ray: var(--learning)">
                   <path class="ray-halo" d="M385 318L716 417"/>
                   <path class="ray-line" d="M385 318L716 417"/>
                   <circle cx="716" cy="417" r="4"/>
                   <text x="558" y="448">03 · LEARNING</text>
                 </g>
-                <g class="ray-group ray-acting" style="--ray: #7c68ff">
+                <g class="ray-group ray-acting" style="--ray: var(--acting)">
                   <path class="ray-halo" d="M385 318L684 558"/>
                   <path class="ray-line" d="M385 318L684 558"/>
                   <circle cx="684" cy="558" r="4"/>
@@ -130,10 +131,10 @@
       <section class="pillar-ribbon" aria-label="Four pillars of intelligence">
         <div class="container pillar-ribbon-grid">
           <p class="ribbon-label">Four pillars<br>of intelligence</p>
-          <article style="--pillar: #ff5d73"><span>01</span><h2>Perception</h2><ul><li>Video understanding</li><li>Computational imaging</li></ul></article>
-          <article style="--pillar: #ffc457"><span>02</span><h2>Reasoning</h2><ul><li>Multimodal intelligence</li><li>Agents &amp; alignment</li></ul></article>
-          <article style="--pillar: #25c8b7"><span>03</span><h2>Learning</h2><ul><li>Generative modeling</li><li>World models</li></ul></article>
-          <article style="--pillar: #7c68ff"><span>04</span><h2>Acting</h2><ul><li>Controllable generation</li><li>Real-world agents</li></ul></article>
+          <article style="--pillar: var(--perception)"><span>01</span><h2>Perception</h2><ul><li>Video understanding</li><li>Computational imaging</li></ul></article>
+          <article style="--pillar: var(--reasoning)"><span>02</span><h2>Reasoning</h2><ul><li>Multimodal intelligence</li><li>Agents &amp; alignment</li></ul></article>
+          <article style="--pillar: var(--learning)"><span>03</span><h2>Learning</h2><ul><li>Generative modeling</li><li>World models</li></ul></article>
+          <article style="--pillar: var(--acting)"><span>04</span><h2>Acting</h2><ul><li>Controllable generation</li><li>Real-world agents</li></ul></article>
         </div>
       </section>
 
@@ -187,7 +188,7 @@
 
     <footer class="site-footer prism-footer">
       <div class="container footer-content">
-        <div class="footer-brand"><p class="footer-wordmark"><b>PRISM</b> Lab</p><p>Perception and Reasoning through<br>Intelligent Synthesis and Modeling</p></div>
+        <div class="footer-brand"><p class="footer-wordmark"><img src="assets/brand/prism-lab-logo-dark.svg" alt="PRISM Lab" width="192" height="30"></p><p>Perception and Reasoning through<br>Intelligent Synthesis and Modeling</p></div>
         <div class="footer-address"><p>Department of Computer Science and Engineering<br>Room 303, Woojung Hall of Informatics<br>Korea University · 02-3290-3203</p></div>
         <div class="footer-meta">
           <a class="ku-signature" href="https://www.korea.ac.kr/en/" target="_blank" rel="noreferrer" aria-label="Visit the Korea University website">

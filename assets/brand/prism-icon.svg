@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64.00 64.00">
+<style>@media (prefers-color-scheme: dark) {#prism-front{fill:#EDEEF0} #prism-side{fill:#AEB4BB} #beam-1{fill:#6E8CF0} #beam-2{fill:#2BC3AE} #beam-3{fill:#F0B848} #beam-4{fill:#F2666A}}</style>
+<title>PRISM Lab icon</title>
+<g id="symbol-compact">
+<path id="prism-front" fill="#11181C" d="M11.608,32.317 L26.197,31.030 L22.349,13.714 Z M2.032,48.904 L30.476,50.286 L26.486,32.330 L11.009,33.696 L10.983,33.400 Z"/>
+<path id="prism-side" fill="#3C4650" d="M26.197,31.030 L33.793,30.359 L22.349,13.714 Z M30.476,50.286 L44.698,46.222 L34.516,31.411 L34.534,31.620 L26.486,32.330 Z"/>
+<path id="beam-1" fill="#3E63DD" d="M34.222,30.984 L64.000,14.919 L64.000,20.506 Z"/>
+<path id="beam-2" fill="#12A594" d="M34.222,30.984 L64.000,23.465 L64.000,29.052 Z"/>
+<path id="beam-3" fill="#E2A336" d="M34.222,30.984 L64.000,31.341 L64.000,36.928 Z"/>
+<path id="beam-4" fill="#E5484D" d="M34.222,30.984 L64.000,39.601 L64.000,45.189 Z"/>
+</g>
+</svg>
