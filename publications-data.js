@@ -16,9 +16,23 @@ window.collaborators = {
   michigan: { name: "Univ. of Michigan", color: "#00274c" },
   unc: { name: "UNC Chapel Hill", color: "#4b9cd3" },
   minnesota: { name: "Univ. of Minnesota", color: "#7a0019" },
+  caltech: { name: "Caltech", color: "#ff6c0c" },
 };
 
 window.publicationsData = [
+  {
+    year: 2026,
+    short: "MeDIA",
+    title: "ContextMRI: Enhancing Compressed Sensing MRI through Metadata Conditioning",
+    authors: "Hyungjin Chung*, Dohun Lee*, Zihui Wu, Byung-Hoon Kim, Katherine L. Bouman, Jong Chul Ye",
+    venue: "Medical Image Analysis, 2026.",
+    collab: ["kaist", "caltech"],
+    image: "assets/images/publications/contextmri.webp",
+    links: [
+      ["Paper", "https://arxiv.org/abs/2501.04284"],
+      ["Code", "https://github.com/DoHunLee1/ContextMRI"],
+    ],
+  },
   {
     year: 2026,
     short: "NeurIPS",
