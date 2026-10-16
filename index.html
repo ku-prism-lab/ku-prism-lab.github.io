@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PRISM Lab at Korea University studies how intelligent systems perceive, reason about, and generate the world through synthesis and modeling.">
-    <meta name="theme-color" content="#0d1016">
+    <meta name="description" content="PRISM Lab at Korea University builds generative models and agents, and better ways to guide and align them.">
+    <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="PRISM Lab · Korea University">
     <meta property="og:description" content="Perception and Reasoning through Intelligent Synthesis and Modeling.">
     <meta property="og:type" content="website">
@@ -13,9 +13,11 @@
     <link rel="icon" href="assets/brand/prism-icon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20261011-brand-v2">
-    <script src="script.js?v=20260831-prism-5" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20261016-light">
+    <script src="script.js?v=20261016-light" defer></script>
+    <script src="publications-data.js?v=20261012" defer></script>
+    <script src="home.js?v=20261016-light" defer></script>
   </head>
   <body class="home-page">
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -23,7 +25,7 @@
     <header class="site-header">
       <nav class="nav-container" aria-label="Primary navigation">
         <a class="brand brand-logo" href="index.html" aria-label="PRISM Lab home">
-          <img src="assets/brand/prism-lab-logo-dark.svg" alt="PRISM Lab" width="167" height="26">
+          <img src="assets/brand/prism-lab-logo.svg" alt="PRISM Lab" width="167" height="26">
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation">
           <span></span><span></span><span></span>
@@ -40,156 +42,148 @@
     </header>
 
     <main id="main-content">
-      <section class="prism-hero" aria-labelledby="hero-title">
-        <div class="hero-aurora" aria-hidden="true"></div>
-        <div class="container prism-hero-layout">
-          <div class="prism-hero-copy" data-reveal>
-            <h1 class="hero-expansion" id="hero-title">
-              <span class="expansion-line"><span class="prism-initial initial-p">P</span>erception and <span class="prism-initial initial-r">R</span>easoning</span>
-              <span class="expansion-line">through <span class="prism-initial initial-i">I</span>ntelligent</span>
-              <span class="expansion-line"><span class="prism-initial initial-s">S</span>ynthesis and <span class="prism-initial initial-m">M</span>odeling</span>
-            </h1>
-          </div>
-
-          <figure class="prism-stage" data-prism-stage aria-label="One signal passes through a prism and becomes four rays representing perception, reasoning, learning, and acting.">
-            <div class="prism-stage-inner">
-              <svg class="prism-visual" viewBox="0 0 740 650" role="img" aria-hidden="true">
-                <defs>
-                  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0" stop-color="#ffffff" stop-opacity=".12"/>
-                    <stop offset=".5" stop-color="#9aa0aa" stop-opacity=".025"/>
-                    <stop offset="1" stop-color="#ffffff" stop-opacity=".09"/>
-                  </linearGradient>
-                  <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
-                    <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
-                    <stop offset=".55" stop-color="#ffffff" stop-opacity=".45"/>
-                    <stop offset="1" stop-color="#ffffff" stop-opacity=".9"/>
-                  </linearGradient>
-                  <radialGradient id="core" cx="50%" cy="50%" r="50%">
-                    <stop offset="0" stop-color="#ffffff" stop-opacity=".9"/>
-                    <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-                  </radialGradient>
-                  <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
-                    <feGaussianBlur stdDeviation="9"/>
-                  </filter>
-                  <filter id="ray-glow" x="-30%" y="-30%" width="160%" height="160%">
-                    <feGaussianBlur stdDeviation="4" result="blur"/>
-                    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-                  </filter>
-                </defs>
-
-                <g class="stage-grid" opacity=".26">
-                  <path d="M32 84H708M32 164H708M32 244H708M32 324H708M32 404H708M32 484H708M32 564H708"/>
-                  <path d="M68 48V602M148 48V602M228 48V602M308 48V602M388 48V602M468 48V602M548 48V602M628 48V602"/>
-                </g>
-                <ellipse class="prism-orbit" cx="293" cy="329" rx="248" ry="273"/>
-                <circle class="prism-core-glow" cx="385" cy="318" r="82" fill="url(#core)" filter="url(#soft-glow)"/>
-
-                <g class="incoming-signal">
-                  <path class="signal-glow" d="M4 380L168 348L385 318"/>
-                  <path class="signal-core" d="M4 380L168 348L385 318" stroke="url(#signal)"/>
-                  <text x="34" y="352">OBSERVATION</text>
-                </g>
-
-                <g class="prism-body">
-                  <path class="prism-glass" d="M270 92L93 535H496Z" fill="url(#glass)"/>
-                  <path class="prism-outline" d="M270 92L93 535H496Z"/>
-                  <path class="prism-facet" d="M168 348L385 318"/>
-                </g>
-
-                <g class="ray-group ray-perception" style="--ray: var(--perception)">
-                  <path class="ray-halo" d="M385 318L697 126"/>
-                  <path class="ray-line" d="M385 318L697 126"/>
-                  <circle cx="697" cy="126" r="4"/>
-                  <text x="524" y="105">01 · PERCEPTION</text>
-                </g>
-                <g class="ray-group ray-reasoning" style="--ray: var(--reasoning)">
-                  <path class="ray-halo" d="M385 318L716 267"/>
-                  <path class="ray-line" d="M385 318L716 267"/>
-                  <circle cx="716" cy="267" r="4"/>
-                  <text x="548" y="247">02 · REASONING</text>
-                </g>
-                <g class="ray-group ray-learning" style="--ray: var(--learning)">
-                  <path class="ray-halo" d="M385 318L716 417"/>
-                  <path class="ray-line" d="M385 318L716 417"/>
-                  <circle cx="716" cy="417" r="4"/>
-                  <text x="558" y="448">03 · LEARNING</text>
-                </g>
-                <g class="ray-group ray-acting" style="--ray: var(--acting)">
-                  <path class="ray-halo" d="M385 318L684 558"/>
-                  <path class="ray-line" d="M385 318L684 558"/>
-                  <circle cx="684" cy="558" r="4"/>
-                  <text x="523" y="590">04 · ACTING</text>
-                </g>
-              </svg>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 id="hero-title">Better generative models, and better ways to guide them.</h1>
+            <p class="hero-lede">
+              PRISM Lab is a research group in the Department of Computer Science and Engineering at Korea University, led by <a href="https://hyungjin-chung.github.io/" target="_blank" rel="noreferrer">Hyungjin Chung</a>. We build generative models and agents, and the guidance and alignment methods that let them reason, create, and act in real-world settings.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="contact.html">Join the lab</a>
+              <a class="text-link" href="publications.html">Browse publications</a>
             </div>
-          </figure>
+          </div>
         </div>
-
-      </section>
-
-      <section class="pillar-ribbon" aria-label="Four pillars of intelligence">
-        <div class="container pillar-ribbon-grid">
-          <p class="ribbon-label">Four pillars<br>of intelligence</p>
-          <article style="--pillar: var(--perception)"><span>01</span><h2>Perception</h2><ul><li>Video understanding</li><li>Computational imaging</li></ul></article>
-          <article style="--pillar: var(--reasoning)"><span>02</span><h2>Reasoning</h2><ul><li>Multimodal intelligence</li><li>Agents &amp; alignment</li></ul></article>
-          <article style="--pillar: var(--learning)"><span>03</span><h2>Learning</h2><ul><li>Generative modeling</li><li>World models</li></ul></article>
-          <article style="--pillar: var(--acting)"><span>04</span><h2>Acting</h2><ul><li>Controllable generation</li><li>Real-world agents</li></ul></article>
+        <div class="hero-prism" aria-hidden="true">
+          <img class="prism-layer prism-incoming" src="assets/brand/hero/prism-incoming.webp" alt="" width="1130" height="540">
+          <img class="prism-layer prism-glass" src="assets/brand/hero/prism-glass.webp" alt="" width="1130" height="540">
+          <img class="prism-layer prism-beams" src="assets/brand/hero/prism-beams.webp" alt="" width="1130" height="540">
         </div>
       </section>
 
-      <section class="lab-introduction">
-        <div class="container introduction-copy" data-reveal>
-          <p>
-            Welcome to the <strong>PRISM Lab</strong> at <strong>Korea University</strong>, led by <strong><a href="https://hyungjin-chung.github.io/" target="_blank" rel="noreferrer">Hyungjin Chung</a></strong>. We develop generative models and agents—and better ways to guide and align them—so that intelligent systems can reason, create, and act in complex real-world settings.
-          </p>
-          <p>
-            We believe that better models create better intelligence, while better guidance and alignment turn that intelligence into breakthroughs. Our work connects foundational research with computational imaging, medical AI, AI4Science, physical AI, and industrial applications.
-          </p>
-          <h2>Our core research areas include:</h2>
-          <ul>
-            <li>Generative AI and agents</li>
-            <li>Video generation and world models</li>
-            <li>Video understanding</li>
-            <li>Inverse problems and computational imaging</li>
-            <li>Medical AI and AI4Science</li>
+      <section class="home-section home-research" aria-labelledby="research-title">
+        <div class="container split">
+          <div class="split-head">
+            <h2 id="research-title">Research</h2>
+            <p>Better generative models and agents give systems richer capabilities. Better guidance and alignment make those capabilities controllable, reliable, and useful.</p>
+            <a class="text-link" href="research.html">More on our research</a>
+          </div>
+          <ul class="direction-list">
+            <li>
+              <h3>Generative AI and agents</h3>
+              <p>Efficient, coherent generation that does not rely on scale alone, including unified multimodal models and visual agents that understand, decompose, and create complex artifacts.</p>
+            </li>
+            <li>
+              <h3>Video generation and world models</h3>
+              <p>Video models that are physically plausible, controllable, and able to predict how the world evolves: geometry, motion, interaction, and state.</p>
+            </li>
+            <li>
+              <h3>Video understanding</h3>
+              <p>Representations and temporal reasoning that let models follow events coherently over time, rather than as a loose set of frames.</p>
+            </li>
+            <li>
+              <h3>Inverse problems and computational imaging</h3>
+              <p>Theory and measurement-aware algorithms that use generative priors to recover signals from incomplete, noisy, or indirect measurements.</p>
+            </li>
+            <li>
+              <h3>Medical AI</h3>
+              <p>Image reconstruction, report generation, segmentation, and digital therapeutics, pairing general-purpose models with domain knowledge.</p>
+            </li>
           </ul>
-          <p class="introduction-research-link"><a href="research.html">Explore our research directions →</a></p>
-          <p class="introduction-recruiting-note">
-            We are looking for motivated students to join the lab. Please see the <a href="contact.html">contact page</a> for details.
-          </p>
         </div>
       </section>
 
-      <section class="home-news prism-news">
+      <section class="home-section home-papers" aria-labelledby="papers-title">
         <div class="container">
-          <div class="plain-section-heading"><h2>News</h2><a href="news.html">View all <span aria-hidden="true">↗</span></a></div>
+          <div class="section-head">
+            <h2 id="papers-title">Recent papers</h2>
+            <a class="text-link" href="publications.html">All publications</a>
+          </div>
+          <ul class="paper-grid" data-recent-papers data-count="6"></ul>
+          <noscript><p class="paper-fallback">See the <a href="publications.html">publications page</a> for our recent papers.</p></noscript>
+        </div>
+      </section>
+
+      <section class="home-section home-news" aria-labelledby="news-title">
+        <div class="container split">
+          <div class="split-head">
+            <h2 id="news-title">News</h2>
+            <a class="text-link" href="news.html">All news</a>
+          </div>
           <div class="news-list compact">
-            <article class="news-row" data-reveal>
+            <article class="news-row">
               <time datetime="2026-10">2026.10</time>
               <p class="news-summary"><strong>One paper</strong>, <em>ContextMRI</em>, is accepted to <strong class="news-venue-name">Medical Image Analysis</strong>.</p>
-              <span class="news-arrow" aria-hidden="true">↗</span>
             </article>
-            <article class="news-row" data-reveal>
+            <article class="news-row">
               <time datetime="2026-10">2026.10</time>
               <p class="news-summary">Hyungjin is selected as a <strong>World Top 2% Scientist 2026</strong>.</p>
-              <span class="news-arrow" aria-hidden="true">↗</span>
             </article>
-            <article class="news-row" data-reveal>
+            <article class="news-row">
               <time datetime="2026-09">2026.09</time>
               <p class="news-summary"><strong>Four papers</strong>, <em>AVIS</em>, <em>StitchVM</em>, <em>EPS</em>, and <em>MVVBench</em> (E&amp;D track), are accepted to <strong class="news-venue-name">NeurIPS 2026</strong>.</p>
-              <span class="news-arrow" aria-hidden="true">↗</span>
             </article>
           </div>
         </div>
       </section>
 
+      <section class="home-section home-people" aria-labelledby="people-title">
+        <div class="container people-layout">
+          <div>
+            <div class="section-head">
+              <h2 id="people-title">People</h2>
+              <a class="text-link" href="people.html">Member profiles</a>
+            </div>
+            <ul class="people-strip">
+              <li>
+                <img src="assets/images/people/square/hyungjin-chung.webp" alt="" width="112" height="112" loading="lazy">
+                <p class="member-name">Hyungjin Chung</p>
+                <p class="member-role">Assistant professor</p>
+              </li>
+              <li>
+                <img src="assets/images/people/square/sangyoon-park.webp" alt="" width="112" height="112" loading="lazy">
+                <p class="member-name">Sangyoon Park</p>
+                <p class="member-role">Ph.D. student</p>
+              </li>
+              <li>
+                <img src="assets/images/people/square/sihyeon-kim.webp" alt="" width="112" height="112" loading="lazy">
+                <p class="member-name">Sihyeon Kim</p>
+                <p class="member-role">Ph.D. student</p>
+              </li>
+              <li>
+                <img src="assets/images/people/square/donghwan-seo.webp" alt="" width="112" height="112" loading="lazy">
+                <p class="member-name">Donghwan Seo</p>
+                <p class="member-role">M.S. student</p>
+              </li>
+              <li>
+                <img src="assets/images/people/square/dongwook-kim.webp" alt="" width="112" height="112" loading="lazy">
+                <p class="member-name">Dongwook Kim</p>
+                <p class="member-role">M.S. student</p>
+              </li>
+            </ul>
+          </div>
+          <aside class="join-panel" aria-labelledby="join-title">
+            <h2 id="join-title">Join the lab</h2>
+            <p>We are looking for self-motivated students who want to do ambitious research in generative AI, agents, and their applications. Prospective graduate students start with a research internship in the group.</p>
+            <a class="button" href="contact.html">How to apply</a>
+          </aside>
+        </div>
+      </section>
     </main>
 
-    <footer class="site-footer prism-footer">
-      <div class="container footer-content">
-        <div class="footer-brand"><p class="footer-wordmark"><img src="assets/brand/prism-lab-logo-dark.svg" alt="PRISM Lab" width="192" height="30"></p><p>Perception and Reasoning through<br>Intelligent Synthesis and Modeling</p></div>
-        <div class="footer-address"><p>Department of Computer Science and Engineering<br>Room 303, Woojung Hall of Informatics<br>Korea University · 02-3290-3203</p></div>
+    <footer class="site-footer home-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="assets/brand/prism-lab-logo.svg" alt="PRISM Lab" width="167" height="26">
+          <p>Perception and Reasoning through<br>Intelligent Synthesis and Modeling</p>
+        </div>
+        <address class="footer-address">
+          Department of Computer Science and Engineering<br>
+          Room 303, Woojung Hall of Informatics, Korea University<br>
+          145 Anam-ro, Seongbuk-gu, Seoul<br>
+          <a href="mailto:hj_chung@korea.ac.kr">hj_chung@korea.ac.kr</a>
+        </address>
         <div class="footer-meta">
           <a class="ku-signature" href="https://www.korea.ac.kr/en/" target="_blank" rel="noreferrer" aria-label="Visit the Korea University website">
             <img src="assets/brand/korea-university-signature.svg" alt="Korea University" width="327" height="108">
