@@ -971,6 +971,100 @@ img {
   line-height: 1.75;
 }
 
+.direction-media {
+  margin-top: 22px;
+}
+
+.media-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #0e1316;
+}
+
+.media-frame video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+}
+
+.media-toggle {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(14, 19, 22, 0.6);
+  color: #ffffff;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 160ms ease;
+}
+
+.media-toggle svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.media-toggle .icon-play,
+.media-toggle.is-paused .icon-pause {
+  display: none;
+}
+
+.media-toggle.is-paused .icon-play {
+  display: block;
+}
+
+.media-frame:hover .media-toggle,
+.media-toggle:focus-visible,
+.media-toggle.is-paused {
+  opacity: 1;
+}
+
+@media (hover: none) {
+  .media-toggle {
+    opacity: 0.85;
+  }
+}
+
+.direction-media figcaption {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  color: var(--quiet, #626c78);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.direction-media figcaption strong {
+  color: var(--ink, #11181c);
+  font-weight: 600;
+}
+
+.direction-media figcaption a {
+  flex: none;
+  color: var(--ink, #11181c);
+  font-weight: 600;
+}
+
+/* home: the video spans both columns of a direction row */
+.direction-list .direction-media {
+  grid-column: 1 / -1;
+  margin-top: 4px;
+}
+
+.direction-media figcaption a:hover {
+  text-decoration: underline;
+}
+
 
 @media (max-width: 820px) {
   .nav-toggle {
@@ -1172,6 +1266,19 @@ img {
 
   .research-direction > div {
     grid-column: 2;
+  }
+
+  /* let the teaser video use the full card width on phones */
+  .research-direction .direction-media {
+    margin: 20px -22px 0 -66px;
+  }
+
+  .research-direction .media-frame {
+    border-radius: 0;
+  }
+
+  .research-direction .direction-media figcaption {
+    padding: 0 22px;
   }
 
   .location-section {
