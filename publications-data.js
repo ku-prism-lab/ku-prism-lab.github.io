@@ -21,6 +21,19 @@ window.collaborators = {
 
 window.publicationsData = [
   {
+    year: 2027,
+    short: "WACV",
+    title: "Align Your Query: Representation Alignment for Multimodality Medical Object Detection",
+    authors: "Ara Seo*, Bryan Sangwoo Kim*, Hyungjin Chung, Jong Chul Ye",
+    venue: "IEEE/CVF Winter Conference on Applications of Computer Vision (Applications Track), 2027.",
+    collab: ["kaist"],
+    image: "assets/images/publications/alignyourquery.webp",
+    links: [
+      ["Paper", "https://arxiv.org/abs/2510.02789"],
+      ["Project", "https://araseo.github.io/alignyourquery/"],
+    ],
+  },
+  {
     year: 2026,
     short: "MeDIA",
     title: "ContextMRI: Enhancing Compressed Sensing MRI through Metadata Conditioning",
