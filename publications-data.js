@@ -25,7 +25,7 @@ window.publicationsData = [
     short: "WACV",
     title: "Align Your Query: Representation Alignment for Multimodality Medical Object Detection",
     authors: "Ara Seo*, Bryan Sangwoo Kim*, Hyungjin Chung, Jong Chul Ye",
-    venue: "IEEE/CVF Winter Conference on Applications of Computer Vision (Applications Track), 2027.",
+    venue: "IEEE/CVF Winter Conference on Applications of Computer Vision, 2027.",
     collab: ["kaist"],
     image: "assets/images/publications/alignyourquery.webp",
     links: [
