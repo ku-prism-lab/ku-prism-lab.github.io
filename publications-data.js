@@ -34,15 +34,15 @@ window.publicationsData = [
     ],
   },
   {
-    year: 2026,
+    year: 2027,
     short: "MeDIA",
     title: "ContextMRI: Enhancing Compressed Sensing MRI through Metadata Conditioning",
     authors: "Hyungjin Chung*, Dohun Lee*, Zihui Wu, Byung-Hoon Kim, Katherine L. Bouman, Jong Chul Ye",
-    venue: "Medical Image Analysis, 2026.",
+    venue: "Medical Image Analysis, 2027.",
     collab: ["kaist", "caltech"],
     image: "assets/images/publications/contextmri.webp",
     links: [
-      ["Paper", "https://arxiv.org/abs/2501.04284"],
+      ["Paper", "https://www.sciencedirect.com/science/article/pii/S1361841526004226"],
       ["Code", "https://github.com/DoHunLee1/ContextMRI"],
     ],
   },
