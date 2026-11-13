@@ -47,6 +47,16 @@ window.publicationsData = [
     ],
   },
   {
+    year: 2027,
+    short: "NeuroImage",
+    title: "Accurate 3D Brain Cross-Modality Image Translation by Lesion-Aware Post-Training of Latent Diffusion Models with Voxel-Space Objectives",
+    authors: "Junhyeok Lee, Hyunwoong Kim, Hyungjin Chung, Heeseong Eom, Joon Jang, Chul-Ho Sohn, Kyu Sung Choi",
+    venue: "NeuroImage, 2027.",
+    collab: ["snu"],
+    image: "assets/images/publications/cldm-pt.webp",
+    links: [["Paper", "https://arxiv.org/abs/2510.09056"]],
+  },
+  {
     year: 2026,
     short: "NeurIPS",
     title: "Accelerating Video Inverse Problem Solvers with Autoregressive Diffusion Models",
